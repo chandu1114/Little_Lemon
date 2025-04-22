@@ -1,10 +1,17 @@
 import "./App.css";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <h1>Hanuma Sai </h1>
-    </div>
+    <>
+      <Nav />
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
