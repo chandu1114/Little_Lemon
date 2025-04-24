@@ -13,7 +13,7 @@ function Header() {
               We are family owned with top chefs with great traditional
               receipies. Welcoming you to taste and feedback
             </p>
-            <Link>
+            <Link to="/booking">
               <button>Reserve Table</button>
             </Link>
           </div>
