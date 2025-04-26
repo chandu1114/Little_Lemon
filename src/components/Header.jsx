@@ -14,7 +14,7 @@ function Header() {
               receipies. Welcoming you to taste and feedback
             </p>
             <Link to="/booking">
-              <button>Reserve Table</button>
+              <button aria-label="On Click">Reserve Table</button>
             </Link>
           </div>
 

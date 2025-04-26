@@ -9,6 +9,9 @@ function BookingForm(props) {
   });
 
   const availableTimes = [12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24];
+  const isFormValid = Object.values(formData).every(
+    (field) => field.trim() !== ""
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -85,7 +88,13 @@ function BookingForm(props) {
             </div>
 
             <div>
-              <button type="submit" className="btnReceive">
+              <button
+                type="submit"
+                className="btnReceive"
+                disabled={!isFormValid}
+                style={{ opacity: isFormValid ? 1 : 0.5 }}
+                aria-label="Submit Form"
+              >
                 Submit
               </button>
             </div>
